@@ -85,22 +85,25 @@
         // то ничего выводить не нужно. Необходимо использовать делегирование.
 
         // Клик по списку(ul)
-        const ul = document.querySelector('ul');
-        ul.onclick = function(event) {
-            const target = event.target;
-            if (target.tagName.toLowerCase() === 'li') {
-                console.log(event.target.textContent);
-            }
-        };
+        // const ul = document.querySelector('ul');
+        // ul.onclick = function(event) {
+        //     const target = event.target;
+        //     if (target.tagName.toLowerCase() === 'li') {
+        //         console.log(event.target.textContent);
+        //     }
+        // };
 
         // Клик по кнопке
-        const ul2 = document.querySelector("ul");
-        ul2.addEventListener("click", (event) => {
-        const target2 = event.target.tagName.toLowerCase();
-        if (target2 === "button") {
-            console.log(event.target.textContent);
+        const ul = document.querySelector('ul');
+        ul.addEventListener('click', (event) => {
+        const target = event.target;
+        // Проверяем, что клик был по элементу button внутри элемента li
+        if (target.closest('button')) {
+        console.log(target.textContent);
         }
         });
+
+
 
         // 6. Вопрос: Почему в console.log пишется сначала текст из 5 задания и
         // только потом выводится текст из 3 задания, если мы кликаем по кнопкам 
