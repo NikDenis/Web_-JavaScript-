@@ -2,14 +2,14 @@
 // должно моментально отображаться в span. То есть при печати в input тег span
 // также должен меняться.
 
-// const changeSpan = () => {
-//   const input = document.getElementById('from');
-//   const span = document.querySelector('span');
-//   span.innerText = input.value;
-// }
+const changeSpan = () => {
+  const input = document.getElementById('from');
+  const span = document.querySelector('span');
+  span.innerText = input.value;
+}
 
-// const input = document.getElementById('from');
-// input.addEventListener('input', changeSpan);
+const input = document.getElementById('from');
+input.addEventListener('input', changeSpan);
 
 // 2. При клике на кнопку с классом messageBtn необходимо элементу с классом message:
 // - добавить два класса: animate_animated и animate_fadeInLeftBig
