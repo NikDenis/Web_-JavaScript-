@@ -1,0 +1,13 @@
+.message {
+    visibility: hidden;
+    color: red;
+}
+
+.error {
+    border-radius: 5px;
+    border-color: red;
+}
+.not-empty {
+    border-color: aqua;
+    color: blue;
+}
