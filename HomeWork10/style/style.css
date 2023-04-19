@@ -1,0 +1,44 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: darkgray;
+    margin-top: 100px;
+}
+.content-box {
+    background-color: grey;
+    display: flex;
+    gap: 70px;
+    text-align: center;
+    justify-content: center;
+}
+.card {
+    background-color: rgb(156, 133, 133);
+    border-radius: 25px 25px 10px 10px;
+}
+.card-img-top {
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+}
+.card-title {
+    color: aqua;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.card-subtitle {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.card-breed {
+    font-size: 15px;
+    font-weight: 800;
+    color: aquamarine;
+    margin-bottom: 5px;
+}
+.card-content {
+    color: red;
+    margin-bottom: 8px;
+}
